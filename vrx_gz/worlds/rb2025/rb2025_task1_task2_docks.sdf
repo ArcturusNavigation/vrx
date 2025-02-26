@@ -356,6 +356,46 @@
       <uri>platform</uri>
     </include>
 
+    <!-- <include>
+    <name>wamv</name>
+    <pose>-535.0 165.0 0.5 0 0 1.57</pose> Adjusted position and orientation 
+    <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/WAM-V</uri>
+    </include> -->
+
+    <include>
+      <name>dock_2022_1</name>
+      <pose>-517.550537 173.910400 1.720474 -0.004994 0.020798 6.276292</pose>
+      <uri>dock_2022</uri>
+</include>
+
+    <include>
+      <name>dock_2022_2</name>
+      <pose>-503.00000 191.910400 1.720474 -0.004994 0.020798 3.134692</pose>
+      <uri>dock_2022</uri>
+    </include>
+
+
+      <!-- <plugin name="vrx::PolyhedraBuoyancyDrag"
+          filename="libPolyhedraBuoyancyDrag.so">
+      <fluid_density>1000</fluid_density>
+      <fluid_level>0.8</fluid_level>
+      <linear_drag>25.0</linear_drag>
+      <angular_drag>2.0</angular_drag>
+      <buoyancy name="collision_outer">
+        <link_name>link</link_name>
+        <pose>0 0 -0.3 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.325</radius>
+            <length>0.1</length>
+          </cylinder>
+        </geometry>
+      </buoyancy>
+      <wavefield>
+        <topic>/vrx/wavefield/parameters</topic>
+      </wavefield>
+      </plugin>  -->
+
     <include>
       <name>round_buoy_black_1</name>
       <pose>-533.550537 167.910400 1.720474 -0.004994 0.020798 1.301492</pose>
@@ -1268,31 +1308,8 @@
       </plugin>
     </include>
 
-    <!-- Load the plugin for the wind -->
-    <plugin
-      filename="libUSVWind.so"
-      name="vrx::USVWind">
-      <!-- models to be effected by the wind -->
-      <wind_obj>
-        <name>wamv</name>
-        <link_name>wamv/base_link</link_name>
-        <coeff_vector> .5 .5 .33</coeff_vector>
-      </wind_obj>
-      <!-- Wind -->
-      <wind_direction>355</wind_direction>
-      <!-- in degrees -->
-      <wind_mean_velocity>9.0</wind_mean_velocity>
-      <var_wind_gain_constants>5.0</var_wind_gain_constants>
-      <var_wind_time_constants>2</var_wind_time_constants>
-      <random_seed>19</random_seed>
-      <!-- set to zero/empty to randomize -->
-      <update_rate>10</update_rate>
-      <topic_wind_speed>/vrx/debug/wind/speed</topic_wind_speed>
-      <topic_wind_direction>/vrx/debug/wind/direction</topic_wind_direction>
-    </plugin>
-
     <!-- Scoring Plugin -->
-    <plugin
+    <!-- <plugin
       filename="libNavigationScoringPlugin.so"
       name="vrx::NavigationScoringPlugin">
       <vehicle>wamv</vehicle>
@@ -1347,7 +1364,7 @@
           <right_marker>green_bound_8</right_marker>
         </gate>
      </gates>
-    </plugin>
+    </plugin> -->
 
     <!-- The wave field -->
     <plugin filename="libPublisherPlugin.so" name="vrx::PublisherPlugin">
