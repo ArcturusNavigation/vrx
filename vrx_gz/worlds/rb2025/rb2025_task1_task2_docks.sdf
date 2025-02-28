@@ -398,7 +398,7 @@
 
     <include>
       <name>round_buoy_black_1</name>
-      <pose>-533.550537 167.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-523.550537 167.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       https://fuel.gazebosim.org/1.0/openrobotics/models/mb_round_buoy_black
       </uri>
@@ -426,7 +426,7 @@
 
     <include>
       <name>round_buoy_black_2</name>
-      <pose>-533.550537 162.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-523.550537 162.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       https://fuel.gazebosim.org/1.0/openrobotics/models/mb_round_buoy_black
       </uri>
@@ -454,7 +454,7 @@
 
      <include>
       <name>round_buoy_green_pre1</name>
-      <pose>-537.550537 170.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-527.550537 170.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_green
       </uri>
@@ -482,7 +482,7 @@
 
     <include>
       <name>round_buoy_red_pre2</name>
-      <pose>-548.550537 170.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-538.550537 170.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_red
       </uri>
@@ -510,7 +510,7 @@
 
     <include>
       <name>round_buoy_green_pre3</name>
-      <pose>-537.550537 177.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-527.550537 177.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_green
       </uri>
@@ -538,7 +538,7 @@
 
      <include>
       <name>round_buoy_red_pre4</name>
-      <pose>-548.550537 177.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-538.550537 177.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_red
       </uri>
@@ -566,7 +566,7 @@
 
  <include>
       <name>round_buoy_green_1</name>
-      <pose>-537.550537 182.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-527.550537 182.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -595,7 +595,7 @@
 
     <include>
       <name>round_buoy_yellow_1</name>
-      <pose>-540.1150537 182.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-530.1150537 182.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_yellow
       </uri>
@@ -623,7 +623,7 @@
 
     <include>
       <name>round_buoy_red_4</name>
-      <pose>-548.550537 182.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-538.550537 182.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -651,7 +651,7 @@
 
      <include>
       <name>round_buoy_green_5</name>
-      <pose>-536.550537 187.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-526.550537 187.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -679,7 +679,7 @@
     
    <include>
       <name>round_buoy_red_6</name>
-      <pose>-547.550537 187.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-537.550537 187.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -707,7 +707,7 @@
 
     <include>
       <name>round_buoy_yellow_3</name>
-      <pose>-544.050537 188.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-534.050537 188.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_yellow
       </uri>
@@ -735,7 +735,7 @@
 
    <include>
       <name>round_buoy_green_7</name>
-      <pose>-535.550537 192.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-525.550537 192.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -763,7 +763,7 @@
     
       <include>
       <name>round_buoy_red_8</name>
-      <pose>-546.550537 192.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-536.550537 192.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -791,7 +791,7 @@
 
      <include>
       <name>round_buoy_green_9</name>
-      <pose>-536.050537 197.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-526.050537 197.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -819,7 +819,7 @@
     
       <include>
       <name>round_buoy_red_10</name>
-      <pose>-547.050537 197.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-537.050537 197.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -847,7 +847,7 @@
 
       <include>
       <name>round_buoy_red_11</name>
-      <pose>-549.550537 202.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-539.550537 202.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -875,7 +875,7 @@
 
    <include>
       <name>round_buoy_green_12</name>
-      <pose>-538.550537 202.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-528.550537 202.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -903,7 +903,7 @@
 
  <include>
       <name>round_buoy_green_13</name>
-      <pose>-538.050537 207.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-528.050537 207.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -931,7 +931,7 @@
 
     <include>
       <name>round_buoy_yellow_4</name>
-      <pose>-541.050537 209.410400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-531.050537 209.410400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_yellow
       </uri>
@@ -959,7 +959,7 @@
 
 <include>
       <name>round_buoy_red_14</name>
-      <pose>-549.050537 207.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-539.050537 207.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -987,7 +987,7 @@
      
      <include>
       <name>round_buoy_green_15</name>
-      <pose>-538.750537 212.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-528.750537 212.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -1015,7 +1015,7 @@
     
    <include>
       <name>round_buoy_red_16</name>
-      <pose>-549.750537 212.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-539.750537 212.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -1043,7 +1043,7 @@
 
    <include>
       <name>round_buoy_green_17</name>
-      <pose>-540.050537 217.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-530.050537 217.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -1071,7 +1071,7 @@
     
     <include>
       <name>round_buoy_red_18</name>
-      <pose>-551.050537 217.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-541.050537 217.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -1099,7 +1099,7 @@
 
     <include>
       <name>round_buoy_yellow_5</name>
-      <pose>-544.050537 218.210400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-534.050537 218.210400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_yellow
       </uri>
@@ -1127,7 +1127,7 @@
 
      <include>
       <name>round_buoy_green_19</name>
-      <pose>-540.050537 222.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-530.050537 222.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -1155,7 +1155,7 @@
     
       <include>
       <name>round_buoy_red_20</name>
-      <pose>-551.050537 222.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-541.050537 222.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
@@ -1183,7 +1183,7 @@
 
       <include>
       <name>round_buoy_green_21</name>
-      <pose>-539.050537 227.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-529.050537 227.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_green
       </uri>
@@ -1211,7 +1211,7 @@
     
       <include>
       <name>round_buoy_red_22</name>
-      <pose>-550.050537 227.910400 1.720474 -0.004994 0.020798 1.301492</pose>
+      <pose>-540.050537 227.910400 1.720474 -0.004994 0.020798 1.301492</pose>
       <uri>
       round_buoy_red
       </uri>
