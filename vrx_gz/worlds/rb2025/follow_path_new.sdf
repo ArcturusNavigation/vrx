@@ -1,55 +1,8 @@
-import xml.etree.ElementTree as ET
 
-def create_buoy(name, x, y, color):
-    # Create an <include> tag for a buoy
-    include = ET.Element("include")
-
-    # Add <name> tag
-    name_tag = ET.SubElement(include, "name")
-    name_tag.text = name
-
-    # Add <pose> tag
-    pose_tag = ET.SubElement(include, "pose")
-    pose_tag.text = f"{x} {y} 1.720474 -0.004994 0.020798 1.301492"
-
-    # Add <uri> tag
-    uri_tag = ET.SubElement(include, "uri")
-    uri_tag.text = f"round_buoy_{color}"
-
-    # Add <plugin> tag
-    plugin = ET.SubElement(include, "plugin", name="vrx::PolyhedraBuoyancyDrag", filename="libPolyhedraBuoyancyDrag.so")
-
-    ET.SubElement(plugin, "fluid_density").text = "1000"
-    ET.SubElement(plugin, "fluid_level").text = "0.0"
-    ET.SubElement(plugin, "linear_drag").text = "25.0"
-    ET.SubElement(plugin, "angular_drag").text = "2.0"
-
-    buoyancy = ET.SubElement(plugin, "buoyancy", name="collision_outer")
-    ET.SubElement(buoyancy, "link_name").text = "link"
-    ET.SubElement(buoyancy, "pose").text = "0 0 0.0 0 0 0"
-
-    geometry = ET.SubElement(buoyancy, "geometry")
-    cylinder = ET.SubElement(geometry, "cylinder")
-    ET.SubElement(cylinder, "radius").text = "0.325"
-    ET.SubElement(cylinder, "length").text = "0.1"
-
-    wavefield = ET.SubElement(plugin, "wavefield")
-    ET.SubElement(wavefield, "topic").text = "/vrx/wavefield/parameters"
-
-    return include
-
-
-def generate_gazebo_world(coordinates, file_path):
-    # Static header to include at the beginning of the world file
-    # Extract the world name from the file name
-    world_name = file_path.split("/")[-1].replace(".sdf", "").replace(" ", "_")
-    print("world name???", world_name)
-    
-    header = f'''
     <?xml version="1.0" ?>
 
 <sdf version="1.9">
-  <world name="{world_name}">
+  <world name="follow_path_new">
 
     <physics name="4ms" type="dart">
       <max_step_size>0.004</max_step_size>
@@ -403,10 +356,7 @@ def generate_gazebo_world(coordinates, file_path):
       <name>platform</name>
       <uri>platform</uri>
     </include>
-    '''
-
-    # Static footer to include at the end of the world file
-    footer = '''
+    <include><name>round_buoy_red_1</name><pose>-520.0 180.0 1.720474 -0.004994 0.020798 1.301492</pose><uri>round_buoy_red</uri><plugin name="vrx::PolyhedraBuoyancyDrag" filename="libPolyhedraBuoyancyDrag.so"><fluid_density>1000</fluid_density><fluid_level>0.0</fluid_level><linear_drag>25.0</linear_drag><angular_drag>2.0</angular_drag><buoyancy name="collision_outer"><link_name>link</link_name><pose>0 0 0.0 0 0 0</pose><geometry><cylinder><radius>0.325</radius><length>0.1</length></cylinder></geometry></buoyancy><wavefield><topic>/vrx/wavefield/parameters</topic></wavefield></plugin></include><include><name>round_buoy_green_1</name><pose>-500.0 180.0 1.720474 -0.004994 0.020798 1.301492</pose><uri>round_buoy_green</uri><plugin name="vrx::PolyhedraBuoyancyDrag" filename="libPolyhedraBuoyancyDrag.so"><fluid_density>1000</fluid_density><fluid_level>0.0</fluid_level><linear_drag>25.0</linear_drag><angular_drag>2.0</angular_drag><buoyancy name="collision_outer"><link_name>link</link_name><pose>0 0 0.0 0 0 0</pose><geometry><cylinder><radius>0.325</radius><length>0.1</length></cylinder></geometry></buoyancy><wavefield><topic>/vrx/wavefield/parameters</topic></wavefield></plugin></include><include><name>round_buoy_red_2</name><pose>-520.0 200.0 1.720474 -0.004994 0.020798 1.301492</pose><uri>round_buoy_red</uri><plugin name="vrx::PolyhedraBuoyancyDrag" filename="libPolyhedraBuoyancyDrag.so"><fluid_density>1000</fluid_density><fluid_level>0.0</fluid_level><linear_drag>25.0</linear_drag><angular_drag>2.0</angular_drag><buoyancy name="collision_outer"><link_name>link</link_name><pose>0 0 0.0 0 0 0</pose><geometry><cylinder><radius>0.325</radius><length>0.1</length></cylinder></geometry></buoyancy><wavefield><topic>/vrx/wavefield/parameters</topic></wavefield></plugin></include><include><name>round_buoy_green_2</name><pose>-500.0 200.0 1.720474 -0.004994 0.020798 1.301492</pose><uri>round_buoy_green</uri><plugin name="vrx::PolyhedraBuoyancyDrag" filename="libPolyhedraBuoyancyDrag.so"><fluid_density>1000</fluid_density><fluid_level>0.0</fluid_level><linear_drag>25.0</linear_drag><angular_drag>2.0</angular_drag><buoyancy name="collision_outer"><link_name>link</link_name><pose>0 0 0.0 0 0 0</pose><geometry><cylinder><radius>0.325</radius><length>0.1</length></cylinder></geometry></buoyancy><wavefield><topic>/vrx/wavefield/parameters</topic></wavefield></plugin></include><include><name>round_buoy_red_3</name><pose>-520.0 220.0 1.720474 -0.004994 0.020798 1.301492</pose><uri>round_buoy_red</uri><plugin name="vrx::PolyhedraBuoyancyDrag" filename="libPolyhedraBuoyancyDrag.so"><fluid_density>1000</fluid_density><fluid_level>0.0</fluid_level><linear_drag>25.0</linear_drag><angular_drag>2.0</angular_drag><buoyancy name="collision_outer"><link_name>link</link_name><pose>0 0 0.0 0 0 0</pose><geometry><cylinder><radius>0.325</radius><length>0.1</length></cylinder></geometry></buoyancy><wavefield><topic>/vrx/wavefield/parameters</topic></wavefield></plugin></include><include><name>round_buoy_green_3</name><pose>-500.0 220.0 1.720474 -0.004994 0.020798 1.301492</pose><uri>round_buoy_green</uri><plugin name="vrx::PolyhedraBuoyancyDrag" filename="libPolyhedraBuoyancyDrag.so"><fluid_density>1000</fluid_density><fluid_level>0.0</fluid_level><linear_drag>25.0</linear_drag><angular_drag>2.0</angular_drag><buoyancy name="collision_outer"><link_name>link</link_name><pose>0 0 0.0 0 0 0</pose><geometry><cylinder><radius>0.325</radius><length>0.1</length></cylinder></geometry></buoyancy><wavefield><topic>/vrx/wavefield/parameters</topic></wavefield></plugin></include><include><name>round_buoy_yellow_1</name><pose>-490.0 230.0 1.720474 -0.004994 0.020798 1.301492</pose><uri>round_buoy_yellow</uri><plugin name="vrx::PolyhedraBuoyancyDrag" filename="libPolyhedraBuoyancyDrag.so"><fluid_density>1000</fluid_density><fluid_level>0.0</fluid_level><linear_drag>25.0</linear_drag><angular_drag>2.0</angular_drag><buoyancy name="collision_outer"><link_name>link</link_name><pose>0 0 0.0 0 0 0</pose><geometry><cylinder><radius>0.325</radius><length>0.1</length></cylinder></geometry></buoyancy><wavefield><topic>/vrx/wavefield/parameters</topic></wavefield></plugin></include>
 <!-- <?xml version='1.0' encoding='utf-8'?>
 <sdf version="1.6"><model name="adjusted_navigation_course"> -->
     
@@ -595,48 +545,3 @@ def generate_gazebo_world(coordinates, file_path):
     </plugin>
   </world>
 </sdf>
-'''
-
-    
-
-    # Start writing the world file
-    world_content = header
-
-    # Track count of each color for unique naming
-    color_count = {"red": 0, "yellow": 0, "green": 0}
-
-    # Iterate through coordinates and add buoys
-    for x, y, color in coordinates:
-        color_count[color] += 1
-        buoy_name = f"round_buoy_{color}_{color_count[color]}"
-        buoy_element = create_buoy(buoy_name, x, y, color)
-        world_content += ET.tostring(buoy_element, encoding='unicode')
-
-    # Append the footer
-    world_content += footer
-
-    # Write the final content to the specified file path
-    with open(file_path, "w") as f:
-        f.write(world_content)
-
-if __name__ == "__main__":
-    
-    # TO DO: Define locations and colors of round buoys
-    # Formst: list of (x, y, color)
-    coordinates = [
-        (-520.0, 180.0, "red"),
-        (-500.0, 180.0, "green"),
-        (-520.0, 200.0, "red"),
-        (-500.0, 200.0, "green"),
-        (-520.0, 220.0, "red"),
-        (-500.0, 220.0, "green"),
-        (-490.0, 230.0, "yellow"),
-    ]
-
-    # TO DO: Define the output file path and name
-    file_path = "rb2025/follow_path_new.sdf"
-
-    # Generate the world file
-    generate_gazebo_world(coordinates, file_path)
-
-    print(f"Gazebo world file created successfully at {file_path}.")
