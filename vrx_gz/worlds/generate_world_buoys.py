@@ -603,7 +603,7 @@ def generate_gazebo_world(coordinates, file_path):
     world_content = header
 
     # Track count of each color for unique naming
-    color_count = {"red": 0, "yellow": 0, "green": 0}
+    color_count = {"red": 0, "yellow": 0, "green": 0, "blue": 0}
 
     # Iterate through coordinates and add buoys
     for x, y, color in coordinates:
@@ -630,7 +630,7 @@ if __name__ == "__main__":
         (-500.0, 200.0, "green"),
         (-520.0, 220.0, "red"),
         (-500.0, 220.0, "green"),
-        (-490.0, 230.0, "yellow"),
+        (-500.0, 240.0, "yellow"),
     ]
 
     # TO DO: Define the output file path and name
