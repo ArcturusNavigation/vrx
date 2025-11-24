@@ -121,7 +121,7 @@
     <include>
       <name>obstacle_0</name>
       <pose>-50 -8 0 0 0 0 </pose>
-      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/mb_marker_buoy_white</uri>
+      <uri>round_buoy_yellow</uri>
       <plugin name="vrx::PolyhedraBuoyancyDrag"
               filename="libPolyhedraBuoyancyDrag.so">
         <fluid_density>1000</fluid_density>
